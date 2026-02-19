@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 28px;
+}
+
+menu, ol, ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NexonLv1Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexonLv1Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexonLv1Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+main {
+  padding-top: 130px;
+}
+main .inner {
+  display: flex;
+}
+main .inner section {
+  width: 100%;
+}
+main .inner section .section-title {
+  font-size: 48px;
+}
+main .inner .profile {
+  max-width: 470px;
+  padding-top: 25px;
+}
+main .inner .skill {
+  max-width: 850px;
+  padding: 25px;
+}
+
+body {
+  font-family: "Quantico", "NexonLv1Gothic", sans-serif;
+  background-image: url(../image/mainbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  height: 3000px;
+}
+
+.inner {
+  max-width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #151515;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .logo {
+  font-size: 48px;
+}
+#header .inner .nav {
+  display: flex;
+  gap: 30px;
+  font-size: 36px;
+  position: relative;
+}
+#header .inner .nav .nav-item {
+  position: relative;
+  transition: 0.3s;
+}
+#header .inner .nav .nav-item span {
+  display: inline-block;
+  transition: 0.3s;
+}
+#header .inner .nav .nav-item::before {
+  content: "";
+  position: absolute;
+  color: #0088FF;
+  left: 0;
+  width: 100%;
+  bottom: -15px;
+  border-bottom: 4px solid #0088FF;
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+#header .inner .nav .nav-item:hover, #header .inner .nav .nav-item.active {
+  color: #0088FF;
+}
+#header .inner .nav .nav-item:hover span, #header .inner .nav .nav-item.active span {
+  transform: translateY(-3px);
+}
+#header .inner .nav .nav-item:hover::before, #header .inner .nav .nav-item.active::before {
+  transform: scaleX(1);
+}
