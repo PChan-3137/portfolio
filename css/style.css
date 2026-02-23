@@ -120,15 +120,16 @@ main .inner .profile .profilewrap {
   gap: 20px;
 }
 main .inner .profile .profilewrap .profile-img {
+  max-width: 220px;
+  min-width: 120px;
   flex: 1 1 0;
-  min-width: 0;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 main .inner .profile .profilewrap .profileinfo {
   flex: 0 0 230px;
   max-width: 230px;
-  height: 100%;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -218,7 +219,7 @@ main .inner .skill #skill-grid .skill-card .skill-sub {
   line-height: 18px;
   color: #CCC;
 }
-@media (max-width: 940px) {
+@media (max-width: 768px) {
   main {
     padding-top: 90px;
   }
@@ -230,14 +231,34 @@ main .inner .skill #skill-grid .skill-card .skill-sub {
     max-width: 940px;
     width: 100%;
   }
-  main .inner .profile .profilewrap .profile-img {
-    max-width: 400px;
-  }
   main .inner .skill {
     padding: 0;
   }
   main .inner .skill #skill-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 80px;
+  }
+  main .inner {
+    padding: 0 10px;
+  }
+  main .inner section .section-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  main .inner .profile .profilewrap {
+    gap: 10px;
+  }
+  main .inner .profile .profilewrap .profileinfo .info-item img {
+    width: 18px;
+    height: 18px;
+  }
+  main .inner .profile .profilewrap .profileinfo .info-item p {
+    margin-left: 5px;
+    font-size: 14px;
   }
 }
 
@@ -290,6 +311,7 @@ body {
 }
 #header .inner .logo {
   font-size: 48px;
+  transition: 0.3s;
 }
 #header .inner .nav {
   display: flex;
@@ -326,17 +348,36 @@ body {
 #header .inner .nav .nav-item:hover::before, #header .inner .nav .nav-item.active::before {
   transform: scaleX(1);
 }
-@media (max-width: 940px) {
+@media (max-width: 768px) {
   #header {
     height: 70px;
+  }
+  #header .inner {
+    padding: 0 20px;
   }
   #header .inner .logo {
     font-size: 36px;
   }
   #header .inner .nav {
     font-size: 24px;
+    gap: 20px;
   }
   #header .inner .nav .nav-item::before {
     bottom: -7px;
+  }
+}
+@media (max-width: 480px) {
+  #header {
+    height: 60px;
+  }
+  #header .inner .logo {
+    font-size: 24px;
+  }
+  #header .inner .nav {
+    font-size: 18px;
+    gap: 15px;
+  }
+  #header .inner .nav .nav-item::before {
+    bottom: -3px;
   }
 }

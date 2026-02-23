@@ -31,6 +31,7 @@ body{
     align-items: center;
     .logo{
       font-size: 48px;
+      transition: 0.3s;
     }
     .nav{
       display: flex;
@@ -68,19 +69,37 @@ body{
       }
     }
   }
-  @media (max-width:940px){
+  @media (max-width:768px){
     height: 70px;
     .inner{
+      padding: 0 20px;
       .logo{
         font-size: 36px;
       }
       .nav{
         font-size: 24px;
+        gap: 20px;
         .nav-item::before{
           bottom: -7px;
         }
       }
     }
+  }
+  @media (max-width:480px) {
+    height: 60px;
+    .inner{
+      .logo{
+        font-size: 24px;
+      }
+      .nav{
+        font-size: 18px;
+        gap: 15px;
+        .nav-item::before{
+          bottom: -3px;
+        }
+      }
+    }
+    
   }
 }
 

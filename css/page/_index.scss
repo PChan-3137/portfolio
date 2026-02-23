@@ -22,17 +22,17 @@ main{
         display: flex;
         gap: 20px;
         .profile-img{
-          // max-width: 220px;
+          max-width: 220px;
+          min-width: 120px;
           flex: 1 1 0;
-          min-width: 0;
-          max-width: 100%;
-          // width: 100%;
+          // max-width: 100%;
+          width: 100%;
           object-fit: cover;
         }
         .profileinfo{
           flex: 0 0 230px;
           max-width: 230px;
-          height: 100%;
+          margin-top: auto;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -96,7 +96,6 @@ main{
           display: none;
         }
         .skill-card{
-          
           min-height: 252px;
           cursor: default;
           border: 2px solid #ffffff1a;
@@ -128,7 +127,7 @@ main{
       }
     }
   }
-  @media (max-width:940px){
+  @media (max-width:768px){
     padding-top: 90px;
     .inner{
       flex-direction: column;
@@ -138,7 +137,7 @@ main{
         width: 100%;
         .profilewrap{
           .profile-img{
-            max-width: 400px;
+            // max-width: 400px;
           }
         }
       }
@@ -149,6 +148,31 @@ main{
         }
       }
     }
+  }
+  @media (max-width:480px) {
+    padding-top: 80px;
+    .inner{
+      padding: 0 10px;
+      section{
+        .section-title{
+          font-size: 36px;
+          line-height: 44px;
+        }
+      }
+      .profile{
+        .profilewrap{
+          gap: 10px;
+          .profileinfo{
+            .info-item{
+              img{width: 18px;height: 18px;}
+              p{margin-left: 5px; font-size: 14px;}
+            }
+          }
+        }
+      }
+    }
+
+    
   }
 }
 
