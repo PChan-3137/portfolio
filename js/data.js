@@ -148,4 +148,32 @@ export const portfolio = [
     url:"https://pchan-3137.github.io/Spigen/",
     sub2:"사용자 친화적인 인터페이스와 완전한 반응형 디자인을 갖춘 주변기기 플랫폼 구현입니다."
   },
+  {
+    name: "코카-콜라 홈페이지 리뉴얼",
+    sub:"팀 프로젝트 작업물입니다.",
+    skill: ["HTML","CSS","Sass","JavaScript"],
+    image: "image/coca.png",
+    skills: ["HTML5","CSS3","SCSS","JavaScript"],
+    Tools: ["VSC","Figma"],
+    date: "2026.01.13 ~ 2026.02.20",
+    people: "3명",
+    role: "기획(30%),디자인(30%),구현(40%)",
+    github:"https://github.com/PChan-3137/coca",
+    url:"https://pchan-3137.github.io/coca/",
+    sub2:"메인페이지 스크롤 이벤트 섹션 및 하위 브랜드(brand,brands,brand-product) 페이지 디자인,구현을 진행하고 파일 병합 및 관리를 담당했습니다."
+  },
+  {
+    name: "개인 포트폴리오",
+    sub:"",
+    skill: ["HTML","CSS","Sass","JavaScript"],
+    image: "image/pf.png",
+    skills: ["HTML5","CSS3","SCSS","JavaScript"],
+    Tools: ["VSC","Figma"],
+    date: "2025.02.12 ~ 2026.02.24",
+    people: "1명",
+    role: "디자인, 구현",
+    github:"https://github.com/PChan-3137/personal",
+    url:"https://pchan-3137.github.io/personal/",
+    sub2:"포트폴리오 웹사이트입니다. 탭 버튼 및 그리드,카드 디자인으로 한번에 확인하기 편한 사이트를 지향했습니다."
+  },
 ]
