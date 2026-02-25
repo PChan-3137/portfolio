@@ -601,6 +601,15 @@ body {
   transform: scaleX(0);
   transform-origin: center;
 }
+#header .inner .nav .nav-item::after {
+  content: "|";
+  position: absolute;
+  right: -20px;
+  color: #aaa;
+}
+#header .inner .nav .nav-item:last-child::after {
+  display: none;
+}
 #header .inner .nav .nav-item:hover, #header .inner .nav .nav-item.active {
   color: #0088FF;
 }
@@ -627,6 +636,9 @@ body {
   #header .inner .nav .nav-item::before {
     bottom: -7px;
   }
+  #header .inner .nav .nav-item::after {
+    right: -15px;
+  }
 }
 @media (max-width: 480px) {
   #header {
@@ -648,5 +660,8 @@ body {
   }
   #header .inner .nav .nav-item::before {
     bottom: -3px;
+  }
+  #header .inner .nav .nav-item::after {
+    right: -10px;
   }
 }

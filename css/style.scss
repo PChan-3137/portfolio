@@ -59,6 +59,15 @@ body{
           transform: scaleX(0);
           transform-origin: center;
         }
+        &::after{
+          content: '|';
+          position: absolute;
+          right: -20px;
+          color: #aaa;
+        }
+        &:last-child::after{
+          display: none;
+        }
         &:hover,&.active{
           color: $c-primary;
           span{
@@ -81,9 +90,15 @@ body{
       .nav{
         font-size: 24px;
         gap: 20px;
-        .nav-item::before{
-          bottom: -7px;
+        .nav-item{
+          &::before{
+            bottom: -7px;
+          }
+          &::after{
+            right: -15px;
+          }
         }
+        
       }
     }
   }
@@ -101,8 +116,13 @@ body{
       .nav{
         font-size: 18px;
         gap: 15px;
-        .nav-item::before{
-          bottom: -3px;
+        .nav-item{
+          &::before{
+            bottom: -3px;
+          }
+          &::after{
+            right: -10px;
+          }
         }
       }
     }
