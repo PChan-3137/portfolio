@@ -22,6 +22,7 @@ portfolio.forEach((item, idx) => {
 const overlay = document.getElementById("modalOverlay");
 
 function openModal(data) {
+  document.body.classList.add('modal-open');
   document.getElementById("modalName").textContent = data.name;
   document.getElementById("modalImage").src = data.image;
   renderTags("modalSkills", data.skills);
@@ -63,4 +64,5 @@ window.addEventListener("keydown", e => {
 
 function closeModal() {
   overlay.classList.remove("active");
+  document.body.classList.remove('modal-open');
 }
