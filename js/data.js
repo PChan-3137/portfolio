@@ -55,12 +55,6 @@ export const skillData = [
   },
   {
     category: "stack",
-    image: "image/Bootstrap.svg",
-    name: "Bootstrap",
-    sub: "그리드 시스템과 유틸리티 클래스를 활용하여 반응형 레이아웃을 빠르게 구현합니다."
-  },
-  {
-    category: "stack",
     image: "image/AndroidStudio-Dark.svg",
     name: "AndroidStudio",
     sub: "현재는 주로 웹 퍼블리싱에 집중하고 있으나, 모바일 개발 환경에 대한 기본적인 이해를 갖추고 있습니다."
