@@ -145,6 +145,8 @@ main{
       .skill{
         padding: 0;
         #skill-grid{
+          max-height: none;
+          overflow-y: visible;
           grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
         }
       }

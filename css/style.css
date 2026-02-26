@@ -237,6 +237,8 @@ main .inner .skill #skill-grid .skill-card .skill-sub {
     padding: 0;
   }
   main .inner .skill #skill-grid {
+    max-height: none;
+    overflow-y: visible;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
@@ -663,7 +665,6 @@ body {
     border-radius: 100px;
     margin-top: 20px;
     border: 1px solid #0088FF;
-    box-shadow: 0px 10px 10px 2px rgb(80, 80, 80);
     left: 50%;
     transform: translateX(-50%);
   }
