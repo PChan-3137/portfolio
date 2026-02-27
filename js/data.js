@@ -124,8 +124,8 @@ export const portfolio = [
     date: "2025.02.12 ~ 2026.02.24",
     people: "1명",
     role: "디자인, 구현",
-    github:"https://github.com/PChan-3137/personal",
-    url:"https://pchan-3137.github.io/personal/",
+    github:"https://github.com/PChan-3137/portfolio",
+    url:"https://pchan-3137.github.io/portfolio/",
     sub2:"포트폴리오 웹사이트입니다. 탭 버튼 및 그리드,카드 디자인으로 한번에 확인하기 편한 사이트를 지향했습니다."
   },
   {
