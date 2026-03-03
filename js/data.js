@@ -95,7 +95,7 @@ export const portfolio = [
     Tools: ["VSC","Figma"],
     date: "2025.11.21 ~ 2025.12.24",
     people: "1명",
-    role: "기획 / 개발",
+    role: "기획, 디자인, 개발",
     github:"https://github.com/PChan-3137/Public-Renewal",
     url:"https://pchan-3137.github.io/Public-Renewal/",
     sub2:"대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 일부 페이지를 리뉴얼하였습니다."
