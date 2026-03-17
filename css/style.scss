@@ -5,7 +5,9 @@
 @use 'page/project';
 
 $c-primary:#0088FF;
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family:  "Quantico",'NexonLv1Gothic', sans-serif;
   background-image: url(../image/mainbg.jpg);

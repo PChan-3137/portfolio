@@ -21,19 +21,19 @@ export const skillData = [
     category: "stack",
     image: "image/HTML.svg",
     name: "HTML5",
-    sub: "구조와 의미가 명확히 전달되도록 시맨틱 태그를 사용 및 웹 표준을 기반으로 구조를 설계합니다."
+    sub: "시맨틱 태그를 활용해 구조와 의미가 명확한 웹 페이지를 설계합니다."
   },
   {
     category: "stack",
     image: "image/CSS.svg",
     name: "CSS",
-    sub: "CSS3에서 제공하는 새로운 속성들을 적극 활용하여 다양하고 현대적인 디자인을 적용합니다."
+    sub: "레이아웃, 애니메이션, 반응형 디자인을 효율적으로 구현합니다."
   },
   {
     category: "stack",
     image: "image/Sass.svg",
     name: "SCSS",
-    sub: "컬러와 레이아웃의 일관성을 유지하고 확장성과 유지보수를 고려하여 설계합니다."
+    sub: "변수 및 믹스인등을 활용하여 유지보수가 수월하고 확장성있는 구조로 설계합니다."
   },
   {
     category: "stack",
@@ -45,13 +45,13 @@ export const skillData = [
     category: "stack",
     image: "image/chat-gpt.png",
     name: "AI 활용",
-    sub: "생성형 AI를 활용하여 코드 작성, 리팩토링, 오류 해결 및 아이디어 확장을 효율적으로 수행합니다."
+    sub: "바이브 코딩, 오류 해결 및 아이디어 확장을 빠르게 수행합니다."
   },
   {
     category: "stack",
     image: "image/React-Dark.svg",
     name: "React",
-    sub: "컴포넌트 기반 구조를 이해하고, 상태 관리와 props를 활용한 동적 UI 구현이 가능합니다."
+    sub: "컴포넌트 기반 구조와 상태 관리로 동적 UI를 체계적으로 구현하며 재사용성을 높입니다."
   },
   {
     category: "stack",
@@ -64,12 +64,6 @@ export const skillData = [
     image: "image/MySQL-Dark.svg",
     name: "MySql",
     sub: "간단한 테이블 생성 및 조회 쿼리를 작성해보며 데이터 구조에 대한 기초적인 이해를 갖추었습니다."
-  },
-  {
-    category: "stack",
-    image: "image/C.svg",
-    name: "C",
-    sub: "학부 기간동안 기초 C언어 프로그래밍을 배웠습니다."
   },
   {
     category: "design",
@@ -87,20 +81,6 @@ export const skillData = [
 
 export const portfolio = [
   {
-    name: "대전학생교육문화원 리뉴얼",
-    sub:"첫 실습 프로젝트로 작업한 공공기관 리뉴얼 프로젝트입니다.",
-    skill: ["HTML","CSS","JavaScript"],
-    image: "image/dsecc.png",
-    skills: ["HTML5","CSS3","JavaScript"],
-    Tools: ["VSC","Figma"],
-    date: "2025.11.21 ~ 2025.12.24",
-    people: "1명",
-    role: "기획, 디자인, 개발",
-    github:"https://github.com/PChan-3137/Public-Renewal",
-    url:"https://pchan-3137.github.io/Public-Renewal/",
-    sub2:"대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 일부 페이지를 리뉴얼하였습니다."
-  },
-  {
     name: "코카-콜라 홈페이지 리뉴얼",
     sub:"팀 프로젝트 작업물입니다.",
     skill: ["HTML","CSS","Sass","JavaScript"],
@@ -115,6 +95,20 @@ export const portfolio = [
     sub2:"메인페이지 스크롤 이벤트 섹션 및 하위 브랜드(brand,brands,brand-product) 페이지 디자인,구현을 진행하고 파일 병합 및 관리를 담당했습니다."
   },
   {
+    name: "한국한의학연구원 클론코딩",
+    sub:"웹 표준 준수를 위한 메인페이지 클론코딩입니다.",
+    skill: ["HTML","CSS","Sass","JavaScript"],
+    image: "image/clone2.png",
+    skills: ["HTML5","CSS3","SCSS","JavaScript"],
+    Tools: ["VSC","Figma"],
+    date: "2026.02.07 ~ 2026.02.10",
+    people: "1명",
+    role: "구현",
+    github:"https://github.com/PChan-3137/Clone_coding2",
+    url:"https://pchan-3137.github.io/Clone_coding2/",
+    sub2:"Swiper,JS 연습 및 웹 표준 준수를 위한 시맨틱 태그 기반 구조 설계등을 진행하였습니다."
+  },
+  {
     name: "개인 포트폴리오",
     sub:"",
     skill: ["HTML","CSS","Sass","JavaScript"],
@@ -126,7 +120,21 @@ export const portfolio = [
     role: "디자인, 구현",
     github:"https://github.com/PChan-3137/portfolio",
     url:"https://pchan-3137.github.io/portfolio/",
-    sub2:"포트폴리오 웹사이트입니다. 탭 버튼 및 그리드,카드 디자인으로 한번에 확인하기 편한 사이트를 지향했습니다."
+    sub2:"싱글페이지로 한눈에 확인하기 편한 사이트를 지향했습니다."
+  },
+  {
+    name: "대전학생교육문화원 리뉴얼",
+    sub:"첫 실습 프로젝트로 작업한 공공기관 리뉴얼 프로젝트입니다.",
+    skill: ["HTML","CSS","JavaScript"],
+    image: "image/dsecc.png",
+    skills: ["HTML5","CSS3","JavaScript"],
+    Tools: ["VSC","Figma"],
+    date: "2025.11.21 ~ 2025.12.24",
+    people: "1명",
+    role: "기획 / 개발",
+    github:"https://github.com/PChan-3137/Public-Renewal",
+    url:"https://pchan-3137.github.io/Public-Renewal/",
+    sub2:"대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 일부 페이지를 리뉴얼하였습니다."
   },
   {
     name: "프리미엄 쇼핑몰 슈피겐(Spigen)",
@@ -141,20 +149,6 @@ export const portfolio = [
     github:"https://github.com/PChan-3137/Spigen",
     url:"https://pchan-3137.github.io/Spigen/",
     sub2:"사용자 친화적인 인터페이스와 완전한 반응형 디자인을 갖춘 주변기기 플랫폼 구현입니다."
-  },
-  {
-    name: "한국한의학연구원 클론코딩",
-    sub:"웹 표준 준수를 위한 메인페이지 클론코딩입니다.",
-    skill: ["HTML","CSS","Sass","JavaScript"],
-    image: "image/clone2.png",
-    skills: ["HTML5","CSS3","SCSS","JavaScript"],
-    Tools: ["VSC","Figma"],
-    date: "2026.02.07 ~ 2026.02.10",
-    people: "1명",
-    role: "구현",
-    github:"https://github.com/PChan-3137/Clone_coding2",
-    url:"https://pchan-3137.github.io/Clone_coding2/",
-    sub2:"Swiper,JS 연습 및 웹 표준 준수를 위한 시맨틱 태그 기반 구조 설계등을 진행하였습니다."
   },
   {
     name: "Balboa 클론코딩",

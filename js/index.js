@@ -6,6 +6,8 @@ const Pbtn = document.querySelectorAll(".profile-tab");
 const Sbtn = document.querySelectorAll(".skill-tab");
 const Pcontent = document.getElementById("profile-content");
 const Scontent = document.getElementById("skill-grid");
+const sections = document.querySelectorAll("#profile, #project");
+const navItems = document.querySelectorAll(".nav-item");
 
 function profileRender(category) {
   Pcontent.innerHTML = "";
@@ -65,6 +67,31 @@ Sbtn.forEach(tab => {
     tab.classList.add("active");
     skillRender(tab.dataset.category);
   });
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+
+          if (item.getAttribute("href") === `#${id}`) {
+            item.classList.add("active");
+          }
+        });
+      }
+    });
+  },
+  {
+    rootMargin: "-50% 0px -50% 0px", // 🔥 핵심
+    threshold: 0
+  }
+);
+sections.forEach((section) => {
+  observer.observe(section);
 });
 
 profileRender("edu");

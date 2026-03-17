@@ -9,18 +9,18 @@
 <body>
   <header id="header">
     <div class="inner">
-      <a href="index.html"><div class="logo">Chan</div></a>
+      <a href="index.html"><div class="logo">Chan Portfolio</div></a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav-item active"><span>About me</span></a>
-        <a href="project.html" class="nav-item"><span>Project</span></a>
+        <a href="#profile" class="nav-item active"><span>About me</span></a>
+        <a href="#project" class="nav-item"><span>Project</span></a>
         <a href="https://github.com/PChan-3137" class="nav-item"><span>Github</span></a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="inner">
-      <section class="profile">
+      <section class="profile" id="profile">
         <h1 class="section-title">Profile</h1>
         <div class="profilewrap">
           <img class="profile-img" src="image/profile.png" alt="">
@@ -67,7 +67,47 @@
         <div id="skill-grid"></div>
       </section>
     </div>
+
+    <div class="inner">
+      <section class="project" id="project">
+        <h1 class="section-title">Project</h1>
+        <section class="portfolio-grid" id="portfolioGrid"></section>
+      </section>
+    </div>
+
+    <!-- 팝업 -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <!-- 헤더 -->
+        <header class="modal-header">
+          <div class="modal-title">
+            <small>Project</small>
+            <h2 id="modalName"></h2>
+          </div>
+          <button class="modal-close" id="modalClose">✕</button>
+        </header>
+        <!-- 이미지 -->
+        <img id="modalImage" class="modal-image" />
+        <!-- 정보 영역 -->
+        <ul class="modal-info">
+          <li><span class="modal-item">Skills</span><p id="modalSkills"></p></li>
+          <li><span class="modal-item">Tools</span><p id="modalTools"></p></li>
+          <li><span class="modal-item">진행기간</span><p id="modalDate"></p></li>
+          <li><span class="modal-item">개발인원</span><p id="modalPeople"></p></li>
+          <li><span class="modal-item">역할</span><p id="modalRole"></p></li>
+        </ul>
+        <!-- 버튼 -->
+        <div class="modal-links">
+          <a id="modalGithub" target="_blank"><img src="image/Github.png" alt="">Github</a>
+          <a id="modalUrl" target="_blank"><img src="image/Link.png" alt="">배포 URL</a>
+        </div>
+
+        <!-- 설명 -->
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+    </div>
   </main>
   <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/project.js"></script>
 </body>
 </html>
